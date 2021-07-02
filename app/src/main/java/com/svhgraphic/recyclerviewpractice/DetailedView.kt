@@ -1,8 +1,9 @@
-package org.roadtocode.myrecyclerview
+package com.svhgraphic.recyclerviewpractice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+
 
 class DetailedView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

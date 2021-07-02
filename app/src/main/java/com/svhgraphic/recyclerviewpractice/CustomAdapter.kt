@@ -1,4 +1,4 @@
-package org.roadtocode.myrecyclerview
+package com.svhgraphic.recyclerviewpractice
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+
 
 
 class CustomAdapter(private val userList: ArrayList<User>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>(){
@@ -37,7 +38,10 @@ class CustomAdapter(private val userList: ArrayList<User>) : RecyclerView.Adapte
             intent.putExtra("user_name", userList[position].name)
             intent.putExtra("mobile_number",userList[position].mobile)
             holder.ivUser.context.startActivity(intent)
+
+
         }
+
     }
 
     override fun getItemCount(): Int {
